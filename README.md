@@ -3,7 +3,7 @@
 + Install the client [XRayGUI](https://github.com/AKotov-dev/XRayGUI) (preferably) or [Qv2Ray](https://github.com/AKotov-dev/Qv2Ray_XRay_Installer) to your computer.
 + Copy the script shown below to the clipboard. Insert it into the terminal, specify the name or IP of your VPS instead of `192.168.0.100` and press `Enter`.
 ```
-clear; VPS='192.168.0.100'; CONFIG=$(echo "{\"v\":\"2\",\"ps\":\"my-vps\",\"add\":\"$VPS\",\"port\":\"8083\",\"id\":\"e274f0d2-0f5f-11ed-99de-8ba9dddec48c\",\"aid\":\"0\",\"net\":\"ws\",\"scy\":\"auto\",\"sni\":\"\",\"type\":\"\",\"host\":\"example.com\",\"path\":\"/vmess\",\"tls\":\"\"}" | base64 | tr -d [:space:]); echo "vmess://$CONFIG"
+clear; VPS='192.168.0.100'; CONFIG=$(echo "{\"v\":\"2\",\"ps\":\"my-vps\",\"add\":\"$VPS\",\"port\":\"8083\",\"id\":\"e274f0d2-0f5f-11ed-99de-8ba9dddec48c\",\"aid\":\"0\",\"net\":\"ws\",\"scy\":\"auto\",\"sni\":\"\",\"type\":\"\",\"host\":\"example.com\",\"path\":\"/vmess\",\"tls\":\"\"}" | base64 -w 0); echo "vmess://$CONFIG"
 ```
 + Copy the received URL (vmess://...) to the clipboard, paste it into XRayGUI (button `Paste`) and press the `Start` button.
 + Set up a proxy connection in your browser SOCKS5 127.0.0.1:client_port. DNS redirect to it (enable the appropriate check box). Your new location can be checked [here](https://whoer.net).

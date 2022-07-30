@@ -1,4 +1,4 @@
-# vmess-ws - personal security server (rpm/deb)
+# vmess-ws - personal security server
 + Install the `vmess-ws` package (rpm/deb) on your foreign VPS. The server will be started immediately on port 8083
 + Install the client [XRayGUI](https://github.com/AKotov-dev/XRayGUI) to your computer
 + Copy the script shown below to the clipboard. Insert it into the terminal and specify the name or IP of your VPS instead of `192.168.0.100`. Press `Enter`

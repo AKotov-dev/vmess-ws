@@ -10,4 +10,4 @@ clear; VPS='192.168.0.100'; CONFIG=$(echo "{\"v\":\"2\",\"ps\":\"my-vps\",\"add\
 
 **Note:** The time on the client and server must be synchronized. The time zone does not matter.  Tested in Mageia-8, Fedora-36 and LUbuntu-22.04. Don't forget to open port 8083 on the server and client.  
   
-Similar project: [SS-Obfuscator](https://github.com/AKotov-dev/SS-Obfuscator).
+Similar project: [SS-Obfuscator](https://github.com/AKotov-dev/SS-Obfuscator)

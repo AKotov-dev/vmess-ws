@@ -9,4 +9,4 @@ clear; VPS='192.168.0.100'; CONFIG=$(echo "{\"v\":\"2\",\"ps\":\"my-vps\",\"add\
 + Set up a proxy connection in your browser SOCKS5 127.0.0.1:1089. DNS redirect to it (enable the appropriate check box)
 + Your new location can be checked here: https://whoer.net
 
-Note: The time on the client and server must be synchronized. The time zone does not matter.  Tested in Mageia-8, Fedora-36 and LUbuntu-22.04. Don't forget to open port 8083 on the server and client. Similar project - [SS-Obfuscator](https://github.com/AKotov-dev/SS-Obfuscator).
+**Note:** The time on the client and server must be synchronized. The time zone does not matter.  Tested in Mageia-8, Fedora-36 and LUbuntu-22.04. Don't forget to open port 8083 on the server and client. Similar project - [SS-Obfuscator](https://github.com/AKotov-dev/SS-Obfuscator).

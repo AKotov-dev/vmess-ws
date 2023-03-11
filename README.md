@@ -5,7 +5,7 @@ Install the `vmess-ws` package (rpm/deb) on your foreign VPS. The server will be
 clear; VPS='192.168.0.100'; CONFIG=$(echo "{\"v\":\"2\",\"ps\":\"my-vps\",\"add\":\"$VPS\",\"port\":\"8083\",\"id\":\"e274f0d2-0f5f-11ed-99de-8ba9dddec48c\",\"aid\":\"0\",\"net\":\"ws\",\"scy\":\"auto\",\"sni\":\"\",\"type\":\"\",\"host\":\"example.com\",\"path\":\"/vmess\",\"tls\":\"\"}" | base64 -w 0); echo "vmess://$CONFIG"
 ```
 + Specify the name or IP of your VPS instead of `192.168.0.100`
-+ Change the id `e274f0d2-0f5f-11ed-99de-8ba9dddec48c`. A new id for the `client` (in this script) and `server` can be generated [here](https://www.uuidgenerator.net/)
++ Change the id `e274f0d2-0f5f-11ed-99de-8ba9dddec48c`. A new id for the `client` (in this script) and in the server configuration file `/etc/vmess-ws/server.json` can be generated [here](https://www.uuidgenerator.net/)
 + You can also change the port `8083` on the `client` (in this script) and in the `server` configuration file `/etc/vmess-ws/server.json`
 + Press `Enter`
 + Copy the received URL (vmess://...) to the clipboard, paste it into XRayGUI (button `Paste`) and press the `Start` button.

@@ -6,7 +6,7 @@ clear; VPS='192.168.0.100'; CONFIG=$(echo "{\"v\":\"2\",\"ps\":\"my-vps\",\"add\
 ```
 + Specify the name or IP of your VPS instead of `192.168.0.100`
 + Change the id `e274f0d2-0f5f-11ed-99de-8ba9dddec48c`. A new id for the `client` and `server` can be generated [here](https://www.uuidgenerator.net/)
-+ You can also change the port `8083` on the `client` and in the `server` configuration file `/etc/vmess-ws/server.json`
++ You can also change the port `8083` on the `client` (in this line) and in the `server` configuration file `/etc/vmess-ws/server.json`
 + Press `Enter`
 + Copy the received URL (vmess://...) to the clipboard, paste it into XRayGUI (button `Paste`) and press the `Start` button.
 + Set up a proxy connection in your browser SOCKS5 127.0.0.1:client_port. DNS redirect to it (enable the appropriate check box). Your new location can be checked [here](https://whoer.net)

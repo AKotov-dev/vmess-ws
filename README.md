@@ -1,7 +1,7 @@
 # vmess-ws - personal security server
 + Install the `vmess-ws` package (rpm/deb) on your foreign VPS. The server will be started immediately on port 8083. No additional actions are required.
 + Install the client [XRayGUI](https://github.com/AKotov-dev/XRayGUI) (preferably) or [Qv2Ray](https://github.com/AKotov-dev/Qv2Ray_XRay_Installer) to your computer.
-+ Copy the script shown below to the clipboard. Insert it into the terminal, specify the name or IP of your VPS instead of `192.168.0.100` and press `Enter`.
++ Copy the script shown below to the clipboard and insert it into the terminal. Specify the name or IP of your VPS instead of `192.168.0.100`. If necessary, change the id `e274f0d2-0f5f-11ed-99de-8ba9dddec48c` (as password). A new id for the `client` and `server` (/etc/vmess-ws/server.json) can be generated [here](https://www.uuidgenerator.net/) and press `Enter`.
 ```
 clear; VPS='192.168.0.100'; CONFIG=$(echo "{\"v\":\"2\",\"ps\":\"my-vps\",\"add\":\"$VPS\",\"port\":\"8083\",\"id\":\"e274f0d2-0f5f-11ed-99de-8ba9dddec48c\",\"aid\":\"0\",\"net\":\"ws\",\"scy\":\"auto\",\"sni\":\"\",\"type\":\"\",\"host\":\"example.com\",\"path\":\"/vmess\",\"tls\":\"\"}" | base64 -w 0); echo "vmess://$CONFIG"
 ```

@@ -11,8 +11,7 @@ clear; VPS='192.168.0.100'; CONFIG=$(echo "{\"v\":\"2\",\"ps\":\"my-vps\",\"add\
 + Copy the received URL (vmess://...) to the clipboard, paste it into XRayGUI (button `Paste`) and press the `Start` button.
 + Set up a proxy connection in your browser SOCKS5 127.0.0.1:client_port. DNS redirect to it (enable the appropriate check box). Your new location can be checked [here](https://whoer.net)  
   
-If the server configuration is `/etc/vmess-ws/server.json` changed, restart the service:  
-`systemstl restart vmess-ws`.  
+If the `server` configuration is changed, restart the service: `systemstl restart vmess-ws`.  
   
 **Note_1:** If the above is difficult for you, just use the graphics generator `vmess-ws-gen.tar.gz` (see the general list of repository files). Unzip the archive and run `vmess_ws_gen`. The interface is intuitive and does not need additional explanations. The resulting configurations have been tested and are already being used on real VPS.
 

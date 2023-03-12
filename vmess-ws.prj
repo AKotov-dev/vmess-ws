@@ -2,7 +2,7 @@
 name=vmess-ws
 
 [VERSION]
-version=0.1
+version=0.2
 
 [RELEASE]
 release=0.mrx9
@@ -75,17 +75,21 @@ toolversion=unknown
 [INFO]
 0=vmess-ws - XRay Personal Security Server (rpm/deb)
 1=--
-2=+ Install the `vmess-ws` package (rpm/deb) on your foreign VPS. The server will be started immediately on port 8083
-3=+ Install the client [XRayGUI](https://github.com/AKotov-dev/XRayGUI) to your computer
-4=+ Copy the script shown below to the clipboard. Insert it into the terminal and specify the name or IP of your VPS instead of `192.168.0.100`. Press `Enter`
-5=```
-6=clear; VPS='192.168.0.100'; CONFIG=$(echo "{\"v\":\"2\",\"ps\":\"my-vps\",\"add\":\"$VPS\",\"port\":\"8083\",\"id\":\"e274f0d2-0f5f-11ed-99de-8ba9dddec48c\",\"aid\":\"0\",\"net\":\"ws\",\"scy\":\"auto\",\"sni\":\"\",\"type\":\"\",\"host\":\"example.com\",\"path\":\"/vmess\",\"tls\":\"\"}" | base64 | tr -d [:space:]); echo "vmess://$CONFIG"
-7=```
-8=+ Copy the received URL (vmess://...) to the clipboard and paste it into XRayGUI (button `Paste`). Press the `Start` button
-9=+ Set up a proxy connection in your browser SOCKS5 127.0.0.1:1089. DNS redirect to it (enable the appropriate check box)
-10=+ Your new location can be checked here: https://whoer.net
-11=
-12=Note: The time on the client and server must be synchronized. The time zone does not matter.  Tested in Mageia-8, Fedora-36 and LUbuntu-22.04. Don't forget to open port 8083 on the server and client. Similar project - [SS-Obfuscator](https://github.com/AKotov-dev/SS-Obfuscator).
-13=
-14=
-15=v0.1 - Initial release
+2=v0.2
+3=+ Update Xray 1.7.5
+4=+ RPM and DEB packages for VPS
+5=
+6=+ Install the `vmess-ws` package (rpm/deb) on your foreign VPS. The server will be started immediately on port 8083
+7=+ Install the client [XRayGUI](https://github.com/AKotov-dev/XRayGUI) to your computer
+8=+ Copy the script shown below to the clipboard. Insert it into the terminal and specify the name or IP of your VPS instead of `192.168.0.100`. Press `Enter`
+9=```
+10=clear; VPS='192.168.0.100'; CONFIG=$(echo "{\"v\":\"2\",\"ps\":\"my-vps\",\"add\":\"$VPS\",\"port\":\"8083\",\"id\":\"e274f0d2-0f5f-11ed-99de-8ba9dddec48c\",\"aid\":\"0\",\"net\":\"ws\",\"scy\":\"auto\",\"sni\":\"\",\"type\":\"\",\"host\":\"example.com\",\"path\":\"/vmess\",\"tls\":\"\"}" | base64 | tr -d [:space:]); echo "vmess://$CONFIG"
+11=```
+12=+ Copy the received URL (vmess://...) to the clipboard and paste it into XRayGUI (button `Paste`). Press the `Start` button
+13=+ Set up a proxy connection in your browser SOCKS5 127.0.0.1:1089. DNS redirect to it (enable the appropriate check box)
+14=+ Your new location can be checked here: https://whoer.net
+15=
+16=Note: The time on the client and server must be synchronized. The time zone does not matter.  Tested in Mageia-8, Fedora-36 and LUbuntu-22.04. Don't forget to open port 8083 on the server and client. Similar project - [SS-Obfuscator](https://github.com/AKotov-dev/SS-Obfuscator).
+17=
+18=
+19=v0.1 - Initial release

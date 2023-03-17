@@ -15,7 +15,7 @@ If the `server` configuration is changed, restart the service: `systemctl restar
   
 **Note_1:** If the above is difficult for you, just use the graphics generator `vmess-ws-gen.tar.gz` (see the general list of repository files). Unzip the archive and run `vmess_ws_gen`. The interface is intuitive and does not need additional explanations. The resulting configurations have been tested and are already being used on real VPS.
 
-![](https://raw.githubusercontent.com/AKotov-dev/vmess-ws/main/ScreenShot2.png)
+![](https://raw.githubusercontent.com/AKotov-dev/vmess-ws/main/ScreenShot4.png)
 
 **Note_2:** The time on the client and server must be synchronized. The time zone does not matter.  Tested in Mageia-8/9, Fedora-36 and LUbuntu-22.04. Don't forget to open port 8083 on the server and client.  
   

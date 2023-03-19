@@ -8,6 +8,6 @@
 
 ![](https://raw.githubusercontent.com/AKotov-dev/vmess-ws/main/ScreenShot4.png)
 
-**Note:** The time on the client and server must be synchronized. The time zone does not matter.  Tested in Mageia-8/9, Fedora-36 and Ubuntu-22.04. Don't forget to open the ports in `iptables`.  
+**Note:** The time on the client and server must be synchronized. The time zone does not matter. Tested in Mageia-8/9, Fedora-36 and Ubuntu-22.04. Don't forget to open the ports in `iptables`.  
   
 Similar project: [SS-Obfuscator](https://github.com/AKotov-dev/SS-Obfuscator), [trojan-srv](https://github.com/AKotov-dev/trojan-srv).
